@@ -1,5 +1,3 @@
-"use client";
-
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Cpu, ShieldCheck, TrendingUp, Users, Zap } from "lucide-react";
 import React, { useRef } from "react";

@@ -1,14 +1,18 @@
 "use client";
+import { useNavigate } from '@tanstack/react-router';
 import { scrollToSection } from '../lib/utils';
 import { Button } from './ui/button';
 
 export default function Navbar() {
-  // const router = useRouter();
+  const navigate = useNavigate()
   return (
     <div className='flex justify-center items-center w-full'>
       <nav className="fixed top-0 w-full z-[100] border-b border-white/5 backdrop-blur-xl bg-[#0d0d00]/60 px-6 md:px-12 py-5 flex justify-between items-center text-[#f5f0e0]">
         <div className="flex items-center gap-3 cursor-pointer" onClick={() => {
           // router.push('/')
+          navigate({
+            to: '/'
+          })
           window.scrollTo(0, 0)
 
         }}>
