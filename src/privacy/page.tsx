@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
                     animate={{ opacity: 1, y: 0 }}
                     className="prose prose-invert prose-yellow max-w-none"
                 >
-                    <h1 className={`text-4xl md:text-6xl font-black italic uppercase text-yellow-500 mb-4`}>
+                    <h1 className={`font-sans text-4xl md:text-6xl font-black italic uppercase text-yellow-500 mb-4`}>
                         Privacy Policy
                     </h1>
                     <p className="opacity-60 italic mb-12 text-lg">Last Updated: 27-02-2025</p>
