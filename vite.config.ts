@@ -1,10 +1,9 @@
 import babel from '@rolldown/plugin-babel';
 import tailwindcss from '@tailwindcss/vite';
-import react, { reactCompilerPreset } from '@vitejs/plugin-react';
 import { TanStackRouterVite } from '@tanstack/router-vite-plugin';
+import react, { reactCompilerPreset } from '@vitejs/plugin-react';
 import path from 'path';
 import { defineConfig } from 'vite';
-import createHtaccessPlugin from 'vite-plugin-htaccess';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -13,7 +12,7 @@ export default defineConfig({
     TanStackRouterVite(),
     react(),
     tailwindcss(),
-    createHtaccessPlugin(),
+    // createHtaccessPlugin(),
     babel({ presets: [reactCompilerPreset()] })
 
   ],
